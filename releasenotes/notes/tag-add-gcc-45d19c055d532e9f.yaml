@@ -1,0 +1,3 @@
+---
+added:
+  - 🐳 Added `gcc-4.9.4` tag, for updated *gcc* version in ``/usr/local/``.
