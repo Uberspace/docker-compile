@@ -1,3 +1,5 @@
 # Docker Compilation Environment
 
-A Docker image for compilation of packages for CentOS 7 systems
+**VERSION**: `0.0.0`
+
+A Docker image for compilation of packages for _CentOS 7_ systems.
