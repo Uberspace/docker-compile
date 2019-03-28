@@ -22,4 +22,5 @@ RUN set -ex; \
 		which \
 		wget && \
 	gem install fpm && \
+	pip install --upgrade pip && \
 	pip install gsutil
