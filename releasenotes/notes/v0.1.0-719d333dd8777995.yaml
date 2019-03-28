@@ -2,6 +2,6 @@
 summary: Initial import 🎉.
 added:
   - 🔧 Added `bumpversion <https://github.com/c4urself/bump2version>`_ configuration.
-  - 🔧 Added reno <https://pypi.org/project/reno/>`_ configuration.
+  - 🔧 Added `reno <https://pypi.org/project/reno/>`_ configuration.
 updated:
   - 📝 Updated README.
