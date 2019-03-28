@@ -19,6 +19,7 @@ RUN set -ex; \
 		redhat-rpm-config \
 		scl-utils \
 		scl-utils-build \
+		which \
 		wget && \
 	gem install fpm && \
 	pip install gsutil
