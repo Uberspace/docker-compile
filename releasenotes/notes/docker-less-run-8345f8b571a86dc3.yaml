@@ -1,0 +1,5 @@
+---
+changed:
+  - 🐳 use a single ``RUN`` statement in the Dockerfile.
+fixed:
+  - 🐳 use ``LABEL`` instead of ``MAINTAINER``.
