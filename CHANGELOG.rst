@@ -2,6 +2,36 @@
 CHANGELOG
 =========
 
+.. _CHANGELOG_v0.2.1:
+
+v0.2.1
+======
+
+.. _CHANGELOG_v0.2.1_Summary:
+
+Summary
+-------
+
+Moved *Dockerfiles* for tags to branches.
+
+.. _CHANGELOG_v0.2.1_Changes:
+
+Changes
+-------
+
+- 🚚 Moved Dockerfile for tag ``latest`` to branch ``tag/latest``.
+
+- 🚚 Moved Dockerfile for tag ``gcc-4.9.4`` to branch ``tag/gcc-4.9.4``.
+
+
+.. _CHANGELOG_v0.2.1_Updates:
+
+Updates
+-------
+
+- 📝 Add notes on tags and branches to README.
+
+
 .. _CHANGELOG_v0.2.0:
 
 v0.2.0
