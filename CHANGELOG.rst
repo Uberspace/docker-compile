@@ -2,6 +2,19 @@
 CHANGELOG
 =========
 
+.. _CHANGELOG_v0.2.0:
+
+v0.2.0
+======
+
+.. _CHANGELOG_v0.2.0_Added Features:
+
+Added Features
+--------------
+
+- 🐳 Added `gcc-4.9.4` tag, for updated *gcc* version in ``/usr/local/``.
+
+
 .. _CHANGELOG_v0.1.1:
 
 v0.1.1
