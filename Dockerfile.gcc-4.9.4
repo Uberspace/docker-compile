@@ -9,8 +9,8 @@ ENV GCC_URL_SHA="$GCC_URL_PATH/sha512.sum"
 
 RUN yum install -y libmpc-devel mpfr-devel gmp-devel
 
-WORKDIR /tmp
 RUN set -ex; \
+	cd /tmp && \
 	curl --remote-name "$GCC_URL_FILE" && \
 	curl "$GCC_URL_SHA" | grep "$GCC_FILE" | sha512sum --check - && \
 	tar -xjf "$GCC_FILE" && \
@@ -21,7 +21,6 @@ RUN set -ex; \
 	make install >/dev/null && \
 	cd - && \
 	rm -rf "$GCC_PATH"
-WORKDIR /
 
 ENV CC='/usr/local/bin/gcc'
 ENV CXX='/usr/local/bin/g++'
