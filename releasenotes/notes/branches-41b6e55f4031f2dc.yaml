@@ -1,0 +1,7 @@
+---
+summary: Moved *Dockerfiles* for tags to branches.
+updated:
+  - 📝 Add notes on tags and branches to README.
+changed:
+  - 🚚 Moved Dockerfile for tag ``latest`` to branch ``tag/latest``.
+  - 🚚 Moved Dockerfile for tag ``gcc-4.9.4`` to branch ``tag/gcc-4.9.4``.
