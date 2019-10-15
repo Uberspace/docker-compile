@@ -1,7 +1,7 @@
-FROM centos:centos7
+FROM centos:centos8
 
 LABEL maintainer="Uberspace <hallo@uberspace.de>"
-LABEL name="CentOS 7 Compilation Environment"
+LABEL name="CentOS 8 Compilation Environment"
 
 RUN set -ex; \
 	yum install -y epel-release \
@@ -10,8 +10,9 @@ RUN set -ex; \
 	&& yum install -y \
 		git \
 		ruby-devel \
-		python-pip \
-		python-devel \
+		python36 \
+		python3-pip \
+		python36-devel \
 		libffi-devel \
 		openssl-devel \
 		rpm-build \
@@ -21,5 +22,4 @@ RUN set -ex; \
 		which \
 		wget \
 	&& gem install fpm \
-	&& pip install --upgrade pip \
-	&& pip install gsutil
+	&& pip3 install --user gsutil
