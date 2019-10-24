@@ -20,6 +20,8 @@ RUN set -ex; \
 		scl-utils-build \
 		which \
 		wget \
+		centos-release-scl \
+	&& yum install -y devtoolset-7 \
 	&& gem install fpm \
 	&& pip install --upgrade pip \
 	&& pip install gsutil
