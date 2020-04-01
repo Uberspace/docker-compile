@@ -6,7 +6,7 @@ A Docker image for compilation of packages on _CentOS 7_ systems.
 
 ## Tags
 
-Image: `uberspace/docker-compile`. The _master_ brunch is just meta stuff, the
+Image: `uberspace/docker-compile`. The _master_ branch is just meta stuff, the
 tags come from the `tag/…` branches:
 
 - `centos-7`
