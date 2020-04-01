@@ -2,6 +2,34 @@
 CHANGELOG
 =========
 
+.. _CHANGELOG_v0.3.0:
+
+v0.3.0
+======
+
+.. _CHANGELOG_v0.3.0_Summary:
+
+Summary
+-------
+
+We now use `devtoolset <https://www.softwarecollections.org/en/scls/rhscl/devtoolset-8/>` in our images, to support a more recent build-chain.
+
+.. _CHANGELOG_v0.3.0_Added Features:
+
+Added Features
+--------------
+
+- 📦 Add ``centos-release-scl`` repo and installed ``devtoolset-8``, active by default.
+
+
+.. _CHANGELOG_v0.3.0_Updates:
+
+Updates
+-------
+
+- 🐳 supported Docker tags.
+
+
 .. _CHANGELOG_v0.2.1:
 
 v0.2.1
