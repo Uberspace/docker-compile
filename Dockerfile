@@ -28,4 +28,7 @@ RUN set -ex \
 	&& gem install fpm \
 	&& pip install --user --upgrade pip \
 	&& hash -r \
-	&& pip install --user gsutil
+	&& pip install --user gsutil \
+	&& echo "source /opt/rh/devtoolset-8/enable" >> /root/.bashrc
+
+ENV BASH_ENV=/opt/rh/devtoolset-8/enable
