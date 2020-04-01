@@ -12,6 +12,7 @@ RUN set -ex \
 	&& yum upgrade -y \
 	&& yum groupinstall -y "Development Tools" \
 	&& yum install -y \
+		devtoolset-8 \
 		git \
 		libffi-devel \
 		openssl-devel \
@@ -24,9 +25,6 @@ RUN set -ex \
 		scl-utils-build \
 		wget \
 		which \
-	&& yum install -y \
-		devtoolset-7 \
-		devtoolset-8 \
 	&& gem install fpm \
 	&& pip install --user --upgrade pip \
 	&& hash -r \
