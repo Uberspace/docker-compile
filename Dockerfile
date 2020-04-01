@@ -21,7 +21,7 @@ RUN set -ex; \
 		which \
 		wget \
 		centos-release-scl \
-	&& yum install -y devtoolset-7 \
+	&& yum install -y devtoolset-7 devtoolset-8 \
 	&& gem install fpm \
 	&& pip install --upgrade pip \
 	&& pip install gsutil
