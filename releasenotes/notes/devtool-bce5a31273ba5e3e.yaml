@@ -1,0 +1,10 @@
+---
+summary: >-
+  We now use `devtoolset <https://www.softwarecollections.org/en/scls/rhscl/devtoolset-8/>` in our images, to support a more recent build-chain.
+added:
+  - >-
+    📦 Add ``centos-release-scl`` repo and installed ``devtoolset-8``,
+    active by default.
+updated:
+  - >-
+    🐳 supported Docker tags.
