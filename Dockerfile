@@ -6,7 +6,7 @@ LABEL name="CentOS 8 Compilation Environment"
 RUN set -ex; \
 	yum install -y epel-release \
 	&& yum upgrade -y \
-	&& yum install 'dnf-command(config-manager)' \
+	&& yum install -y 'dnf-command(config-manager)' \
 	&& yum config-manager --set-enabled PowerTools \
 	&& yum groupinstall -y "Development Tools" \
 	&& yum install -y \
