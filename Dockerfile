@@ -9,6 +9,7 @@ RUN set -ex \
 	&& yum install -y \
 		centos-release-scl \
 		epel-release \
+	&& echo -e '[uberspace]\nbaseurl=https://repo.corona.uberspace.de/uberspace/$releasever/$basearch/\nenabled=0\ngpgcheck=0' > /etc/yum.repos.d/uberspace.repo \
 	&& yum upgrade -y \
 	&& yum groupinstall -y "Development Tools" \
 	&& yum install -y \
