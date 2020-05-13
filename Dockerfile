@@ -24,5 +24,6 @@ RUN set -ex; \
 		scl-utils-build \
 		which \
 		wget \
+		yum-utils \
 	&& gem install fpm \
 	&& pip3 install --user gsutil
