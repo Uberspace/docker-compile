@@ -5,9 +5,10 @@ LABEL name="CentOS 8 Compilation Environment"
 
 RUN set -ex \
 	&& dnf install -y epel-release \
-	&& echo -e '[uberspace]\nbaseurl=https://repo.corona.uberspace.de/uberspace/$releasever/$basearch/\nenabled=0\ngpgcheck=0' > /etc/yum.repos.d/uberspace.repo \
 	&& dnf upgrade -y \
 	&& dnf install -y 'dnf-command(config-manager)' \
+	&& dnf config-manager --add-repo https://repo.corona.uberspace.de/uberspace.repo \
+	&& dnf config-manager --disable uberspace # see $ENABLE_UBERSPACE_REPO \
 	&& dnf config-manager --set-enabled PowerTools \
 	&& dnf groupinstall -y "Development Tools" \
 	&& dnf install -y \
