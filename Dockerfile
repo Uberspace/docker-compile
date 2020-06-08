@@ -3,14 +3,14 @@ FROM centos:centos8
 LABEL maintainer="Uberspace <hallo@uberspace.de>"
 LABEL name="CentOS 8 Compilation Environment"
 
-RUN set -ex; \
-	yum install -y epel-release \
-        && echo -e '[uberspace]\nbaseurl=https://repo.corona.uberspace.de/uberspace/$releasever/$basearch/\nenabled=0\ngpgcheck=0' > /etc/yum.repos.d/uberspace.repo \
-	&& yum upgrade -y \
-	&& yum install -y 'dnf-command(config-manager)' \
-	&& yum config-manager --set-enabled PowerTools \
-	&& yum groupinstall -y "Development Tools" \
-	&& yum install -y \
+RUN set -ex \
+	&& dnf install -y epel-release \
+	&& echo -e '[uberspace]\nbaseurl=https://repo.corona.uberspace.de/uberspace/$releasever/$basearch/\nenabled=0\ngpgcheck=0' > /etc/yum.repos.d/uberspace.repo \
+	&& dnf upgrade -y \
+	&& dnf install -y 'dnf-command(config-manager)' \
+	&& dnf config-manager --set-enabled PowerTools \
+	&& dnf groupinstall -y "Development Tools" \
+	&& dnf install -y \
 		git \
 		ruby-devel \
 		python36 \
