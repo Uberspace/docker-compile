@@ -27,6 +27,7 @@ RUN set -ex \
 		scl-utils-build \
 		wget \
 		which \
+	&& gem install ffi -v 1.12.0 \
 	&& gem install fpm \
 	&& pip install --user --upgrade pip \
 	&& hash -r \
