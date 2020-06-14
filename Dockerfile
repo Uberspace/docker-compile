@@ -10,7 +10,7 @@ RUN set -ex \
 		centos-release-scl \
 		epel-release \
 	&& yum-config-manager --add-repo https://repo.corona.uberspace.de/uberspace.repo \
-	&& yum-config-manager --disable uberspace  # see $ENABLE_UBERSPACE_REPO \
+	&& yum-config-manager --disable uberspace \
 	&& yum upgrade -y \
 	&& yum groupinstall -y "Development Tools" \
 	&& yum install -y \
