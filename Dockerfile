@@ -8,7 +8,7 @@ RUN set -ex \
 	&& dnf upgrade -y \
 	&& dnf install -y 'dnf-command(config-manager)' \
 	&& dnf config-manager --add-repo https://repo.corona.uberspace.de/uberspace.repo \
-	&& dnf config-manager --disable uberspace # see $ENABLE_UBERSPACE_REPO \
+	&& dnf config-manager --disable uberspace \
 	&& dnf config-manager --set-enabled PowerTools \
 	&& dnf groupinstall -y "Development Tools" \
 	&& dnf install -y \
