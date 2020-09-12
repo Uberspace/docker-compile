@@ -30,9 +30,9 @@ RUN set -ex \
 		which \
 	&& gem install ffi -v 1.12.0 \
 	&& gem install fpm \
-	&& pip install --user --upgrade pip \
+	&& pip install --user --upgrade pip setuptools \
 	&& hash -r \
-	&& pip install --user gsutil==4.51 \
+	&& pip install --user gsutil \
 	&& echo "source /opt/rh/devtoolset-8/enable" >> /root/.bashrc
 
 ENV BASH_ENV=/opt/rh/devtoolset-8/enable
