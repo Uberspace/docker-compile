@@ -20,6 +20,7 @@ RUN set -ex \
 		openssl-devel \
 		python-devel \
 		python-pip \
+		python3 \
 		redhat-rpm-config \
 		rpm-build \
 		ruby-devel \
