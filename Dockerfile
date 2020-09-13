@@ -26,5 +26,6 @@ RUN set -ex \
 		which \
 		wget \
 		yum-utils \
+	&& ln -s /usr/bin/python3 /usr/bin/python \
 	&& gem install fpm \
 	&& pip3 install --user gsutil
