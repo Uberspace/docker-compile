@@ -14,7 +14,7 @@ RUN set -ex \
 	&& yum upgrade -y \
 	&& yum groupinstall -y "Development Tools" \
 	&& yum install -y \
-		devtoolset-8 \
+		devtoolset-9 \
 		git \
 		libffi-devel \
 		openssl-devel \
@@ -33,6 +33,6 @@ RUN set -ex \
 	&& pip install --user --upgrade pip 'setuptools<45' \
 	&& hash -r \
 	&& pip install --user gsutil \
-	&& echo "source /opt/rh/devtoolset-8/enable" >> /root/.bashrc
+	&& echo "source /opt/rh/devtoolset-9/enable" >> /root/.bashrc
 
-ENV BASH_ENV=/opt/rh/devtoolset-8/enable
+ENV BASH_ENV=/opt/rh/devtoolset-9/enable
